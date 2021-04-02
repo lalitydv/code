@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            css pseudo Element
+        </title>
+        <style>
+            p::first-letter {
+                background-color: chartreuse;
+                font-size: 30px;
+            }
+            p::first-line{
+                color: red;
+            }
+            p::after{
+                
+                content:"pls read continus in main pages" ;
+                color: green;
+                
+            }
+            p::before{
+                
+                content:"pls read continus in main pages" ;
+                color: rgb(31, 10, 219);
+                
+            }
+            p::selection {
+              
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <p >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quibusdam distinctio alias velit, maxime, nisi totam suscipit iure ipsa cumque magni, sunt non illo dolor! Delectus quam ullam omnis doloremque.
+        </p> 
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloribus hic exercitationem, nemo, ex delectus quia molestiae minima laboriosam in earum cum reiciendis quae ratione architecto aspernatur impedit accusantium soluta.
+        </p>
+    </body>
+</html>
