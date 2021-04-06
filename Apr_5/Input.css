@@ -1,0 +1,26 @@
+.std {
+    text-align: center;
+    color: cyan;
+    border: 2px double;
+    background-color: darkorange;
+    text-decoration: underline;
+    text-transform: uppercase;
+    width: 99%;
+    height: 50px;
+    padding-top: 14px ;
+    font-size: 20px;
+}
+
+    li {
+        list-style: none;
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    ul {
+        width: 500px;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: cornsilk;
+    }
