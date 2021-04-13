@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            My Assignment_9 in jS
+        </title>
+    </head>
+    <body>
+        <h1>Employee details</h1>
+        <script>
+
+            var empname, empdept, empgender, empbasicsal, empcompnay;
+
+            empname = prompt("Enter Employee Name");
+            empdept = prompt("Enter Employee departement");
+            empgender = prompt("Enter Employee Gnder");
+            empbasicsal = prompt("Enter Employee Salary");
+            empcompnay = prompt("Enter Employee compny name");
+
+            var pf = (12/100)/empbasicsal;
+            var hra = (25/100)/empbasicsal;
+
+            var totalsal = pf + hra+ empbasicsal;
+
+            console.log("Employee Name :-" + empname);
+            console.log("Employee departement :-" + empdept);
+            console.log("Employee Gnder :-" + empgender);
+            console.log("Employee salary :- " + empbasicsal);
+            console.log("Employee compny name :-" + empcompnay);
+            console.log("Employee pf is :-" + pf);
+            console.log("Employee hra is :-" + hra);
+            console.log("Employee totalsal is :-" + totalsal);
+
+                // Male empployee tax
+
+            if(Gender = "male")
+            {
+                if(totalsal>200000)
+                {
+                tex1 = totalsal*15/100;
+                console.log("youre selry is more then 2 lak so your tax is :- " + tex1)
+                }
+            }
+            
+
+            
+
+        </script>
+    </body>
+</html>
