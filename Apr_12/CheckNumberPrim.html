@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Prim number chek,,,,
+        </title>
+        <style>
+            body {
+                background-color: rgb(175, 143, 102);
+            }
+            h1 {
+                color: chartreuse;
+                border: 2px double;
+                width: fit-content;
+                height: 50px;
+                text-align: center;
+                position: absolute;
+                left: 30%;
+            }
+       
+        </style>
+    </head>
+    <body>
+        <h1>WELLCOM TO PRIME NUMBER PAGE</h1>
+        
+       <script>
+           var a;
+           var b = 0;
+           var num = prompt("Enter a number");
+           
+                    for(a = 2; a<num; a++)
+                    {
+                        if(num%2 == 0)
+                        {
+                            b = 1;
+                            break;
+                        }
+                    }
+           if(b==0)
+           {
+            console.log("the number is  prime"); 
+           }
+           else 
+           {
+            console.log("number is not prime"); 
+           }
+       </script>
+    </body>
+</html>
