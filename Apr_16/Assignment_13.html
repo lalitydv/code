@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Revers NUMBER
+        </title>
+    </head>
+    <body>
+        <script>
+            var A= 12345;
+            
+            var orignamA = A;
+            var rev = 0;
+
+            while(A !=0)
+            {
+                rev = (rev*10)+(A%10);
+                        /*
+                         logic of palindrom
+                        0    +   5  = 5
+                         5*10 +   4  = 54
+                         4*10  +  3   = 543
+                         3*10  +  2   = 3432
+                         2*10  +   1   = 54321 */
+                A = parseInt(A/10);
+
+            }
+            console.log("Revorse number is " + rev);
+
+
+     </script>
+    </body>
+    
+
+</html>

@@ -1,0 +1,67 @@
+@@ -0,0 +1,66 @@
+<html>
+
+<head>
+    <title>employee details with json</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var employeeDetails = {
+            employeeName: 'Raj',
+            contactNumber: {
+
+                office: 54634834232,
+                personal: [637467346, 6476394730, 7346374, 3487394],
+            },
+            email_id: {
+
+                office: 'xyx@accenture.com',
+                personal: ['gfhgsfjshf@gmail.com', 'raj@gmail.com'],
+            },
+            designation: 'designer',
+            address: {
+
+                temporary: {
+                    dno: 90,
+                    city: 'hyderabad',
+                },
+
+                permananent: {
+                    dno: 657,
+                    city: 'viza',
+
+                },
+            },
+
+            pic: 'https://media3.s-nbcnews.com/j/newscms/2019_41/3047866/191010-japan-stalker-mc-1121_06b4c20bbf96a51dc8663f334404a899.fit-760w.JPG',
+
+
+        };
+
+        for (var temp in employeeDetails) {
+
+            console.log(temp);
+
+
+            if (typeof(employeeDetails[temp]) == 'object') {
+
+                for (var temp2 in employeeDetails[temp]) {
+
+                    console.log(temp2);
+
+                    console.log(employeeDetails[temp][temp2]);
+                }
+            } else {
+
+                console.log(employeeDetails[temp]);
+            }
+
+
+        }
+    </script>
+
+</body>
+
+
+</html>

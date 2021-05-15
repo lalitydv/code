@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+             to chek Armstrong Number
+        </title>
+    </head>
+    <body>
+        
+        <script>
+           var num = 153;
+           var chek = num;
+           var armstrong =0;
+           var sum =0;
+           var pawer;
+           var len = num.toString().length;
+
+           while (num !=0)
+           { 
+               armstrong = num%10;
+               pawer = Math.pow(armstrong,len); // 3*3*3,5*5*5........
+               sum = sum + pawer;
+               num = parseInt (num/10);
+
+           }
+           if(chek==num)
+           {
+                
+                document.write("this is armstrong number"  );
+                   
+               
+
+           }else
+           { 
+               document.write("this is not  armstrong number"  );
+                   
+           }
+
+        </script>
+    </body>
+</html>

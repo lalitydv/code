@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            palindrom NUMBER GIVEN USER
+        </title>
+    </head>
+    <body>
+        
+        <script>
+           var num = prompt("Eneter NUmber");
+
+           var oarignalnum = num;
+           var rev = 0;
+
+           while(num !=0)
+           {
+               rev = (rev*10) + (num%10);
+               rev = parseInt (num /10);
+
+           }
+           if( oarignalnum == rev)
+           {
+               consol.log ( " is palindrom : -" + rev);
+           }
+           else
+           {
+               console.log("is not palindom :- " + rev);
+           }
+
+          
+        </script>
+    </body>
+</html>
