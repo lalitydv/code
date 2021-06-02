@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+             Event handling in js
+        </title>
+    </head>
+    <body>
+       
+        <div id="msgContainer">
+
+        </div>
+        <b onmouseover="showGoodnewse();">show Goodnewse</b>
+
+        <input type="button" value="showGoodnewse" onclick="showGoodnewse()">
+        
+        <script>
+            function showGoodnewse() {
+                document.querySelector("#msgContainer").innerHTML = "HELLO Dear User  now You are good Web devleper";
+            }
+        
+        </script>
+    </body>
+</html>

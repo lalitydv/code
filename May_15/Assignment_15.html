@@ -1,0 +1,71 @@
+
+<html>
+
+<head>
+    <title>employee details  json</title>
+</head>
+
+<body>
+    <div class="content">
+
+    </div>
+    <script>
+        var empDetails = {
+            empName: 'Lalit',
+            contactNumber: {
+
+                office:  7346374, 
+                personal: [9753499250, 6276394730],
+            },
+            email_id: {
+
+                office: 'kisiu@gamil.com',
+                personal: [' keishna143@gamil.com', 'rajabhoj@gmail.com'],
+            },
+       
+            address: {
+
+                temporary: {
+                    roomno: 254,
+                    city: 'Betul',
+                },
+
+                permananent: {
+                    Hauseno : 209,
+                    city: 'piplani Bhopal ',
+
+                },
+            },
+
+           
+
+
+        };
+
+        for (var temp in empDetails) {
+
+            console.log(temp);
+
+
+             if (typeof(empDetails[temp]) == 'object') {
+
+                for (var temp2 in empDetails[temp]) {
+
+                    console.log(temp2);
+
+                    console.log(empDetails[temp][temp2]);
+                }
+            } else {
+
+                console.log(empDetails[temp]);
+            } 
+
+
+        }
+             
+    </script>
+
+</body>
+
+
+</html>

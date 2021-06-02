@@ -1,0 +1,32 @@
+ <html>
+    <head>
+        <title>
+            Dhtml Exmapl
+        </title>
+    </head>
+    <body>
+        <div class="content">
+
+        </div>
+        <script>
+            var data = document.createElement('div')
+
+            data.setAttribute("id" , "simple");
+            data.setAttribute("name" , "xox");
+            data.setAttribute("class" , "content");
+            data.style.color = "red";
+            data.style.background= 'green';
+            data.style.border= '1px solid red'
+            data.innerHTML = 'hellw my dear user how may i help you';
+            // data.setAttribute("width" , '200px');
+             data.getAttribute("higth" , '300%')
+
+
+
+            document.querySelector(".content").append(data);
+
+            console.log(data);
+        </script>
+    </body>
+</html> 
+

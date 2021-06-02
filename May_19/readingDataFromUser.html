@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>
+            Reading data from input elements.
+        </title>
+        <style>
+            li {
+                list-style: none;
+                border: 1px solid;
+                background-color: #fff;
+                margin: 5px;
+                padding: 5px;
+            }
+            ul {
+                border: 2px solid;
+                width: 400px;
+                margin: 10px auto;
+                padding: 10px;
+                background: #ccc;
+
+            }
+            .errMsg {
+                font-size: 12px;
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter First value:
+                <input type="text" id="fval" onkeypress="return false" >
+                <div class="errMsg fErrMsg">
+                    First value is Mandtry
+                </div>
+            </li>
+            <li>
+                Enter Second value:
+                <input type="text" id="sval" onkeypress="return doValidation(event)">
+                <div class="errMsg sErrMsg">
+                    Second value is Mandtry
+                </div>
+            </li>
+            <li>
+                <input type="button" value="GET Addition" onclick="doOperation('sum', event)">
+                <input type="button" value="GET Division" onclick="doOperation('division')">
+                <input type="button" value="GET Multiplication" onclick="getSum()">
+            </li>
+            <li id="rBlock">               
+                <span></span>                
+            </li>
+        </ul>
+               
+        <script>
+
+            function doOperation(type, event) {
+                console.log(event)
+                
+                var a1 = document.querySelector("#fval").value;
+                if (a1 == '' ){
+                    document.querySelector(".fErrMsg").style.display = 'block';
+                    return;
+                } else {
+                    document.querySelector(".fErrMsg").style.display = 'none';
+                }
+                a1 = parseInt(a1);
+                var a2 = document.querySelector("#sval").value;
+                if (a2 == '' ){
+                    document.querySelector(".sErrMsg").style.display = 'block';
+                    return;
+                } else {
+                    document.querySelector(".sErrMsg").style.display = 'none';
+                }
+                a2 = parseInt(a2);
+                var msg;
+                switch(type) {
+                    case 'sum':
+                        var sum = a1 + a2;
+                        msg = "The sum is : " + sum;
+                        break;
+                    case 'division':
+                        var result = a1 / a2;
+                        msg = "The Division is: " + result;
+                        break;
+                }
+                document.querySelector("span").innerText = msg;
+            }
+            var count = 0;
+            var doValidation = function(event){
+                console.log(event);
+                if (event.target.value.length == 3) {
+                    return false;
+                }
+                if (event.charCode >= 48 && event.charCode <= 57) {
+                    count++;
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+        </script>
+    </body>
+</html>
